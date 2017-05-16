@@ -1,0 +1,134 @@
+body{
+    background-color: black;
+            font-family: 'Archivo Narrow', sans-serif;
+font-family: 'Inconsolata', monospace;
+    //font-family: 'Arvo', serif;
+    font-family: 'Fira Sans', sans-serif;
+    overflow: hidden;
+    
+}
+h1{
+    font-size: 4vh;
+}
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; 
+    filter:hue-rotate();
+}
+.wrap{
+    
+  display: grid;
+  grid-template-columns: repeat(20,5vw);
+  grid-template-rows: repeat(20,5vh);
+    height:100vh;
+}
+.thing{    
+    grid-row:4/13;
+    grid-column-start:2;
+    grid-column-end:10;
+    overflow: visible;
+    text-shadow: 4px 0px 4px rgba(999,999,999,0.4),
+                 -4px 0px 4px rgba(999,999,999,0.4);
+}
+
+.riv {
+    text-align:left;
+    font-size: 10vw;
+    color: rgba(999,999,999,.3);
+    letter-spacing:0vw;
+    transform: rotate(-0deg);
+   
+    
+
+
+   -webkit-text-stroke-width: 1.8px;
+   -webkit-text-stroke-color: transparent;
+}
+.buttCon{
+    display:grid;
+    grid-column: 11/20;
+    grid-row: 4/5;
+    color: white;
+}
+button{
+    
+    background-color: transparent;
+    font-size: 1.2vw;
+
+}
+button:focus{
+    outline: none;
+    transform: rotate(5deg);
+        text-shadow: 4px 0px 4px rgba(999,999,999,0.4),
+                 -4px 0px 4px rgba(999,999,999,0.4);
+}
+button:active{
+    transform:translateX(5px);
+    
+}
+
+.butts{
+display: flex;
+    
+    flex-direction: row;
+    justify-content:space-around;
+    border: none;
+
+}
+
+.infoCon{
+    display: grid;
+    grid-column: 11/21;
+    grid-row: 6/20;
+    
+}
+.info{
+    text-align: justify;
+    text-justify:;
+    font-size:2vh;
+    display: none;
+    flex-direction:column;
+justify-content:flex-start;
+    align-items:left;
+    overflow-y:scroll;
+    color:white;
+   z-index: 1;
+
+    padding-right:8vh;
+    padding-left: 2vh;
+    text-align:left;
+    vertical-align: middle;
+    
+}
+.benefice{
+    color: red;
+}
+.social{
+    display: grid;
+    grid-area: 1/19/2/21;
+    font-size: 4vh;
+    
+}
+.soFl{
+    display: flex;
+    justify-content: space-around;
+    text-shadow: 2px 0px 4px rgba(999,999,999,0.4),
+                 -2px 0px 4px rgba(999,999,999,0.4);
+    
+}
+a{
+    color: rgba(999,999,999,.3);
+}
+
