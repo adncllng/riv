@@ -2,13 +2,16 @@ $(document).ready(function(){
 
         $(".info").slimScroll({
         height: '60vh',
-        color:'#fff'
+        color:'#fff',
+        railVisible: true,
+        alwaysVisable:true,
+        disableFadeOut: false
     });
 
     
     $(".projet").on('click', function(){
 
-    $(".info").html(" <p><h1>Histoire</h1>Côte-des-Neiges.<br><br>Jadis, un little french village de tanneurs et d’agriculteurs, exploitant le courant d’un étroit ruisseau.<br><br> Aujourd’hui, un quartier cosmopolite, où cohabitent étudiants, nouveaux arrivants, et familles. Un territoire dense où circulent des centaines de travailleurs des domaines de la santé et de l’éducation.Une plaque tournante qui abrite toutes les religions du monde, et où 110 langues se font écho. <br><BR>Avec le temps, Côte-des-Neiges est devenu une large rivière, dont le débit a fait affluer des milliers de vies, et où autant d’histoires de migrations se sont versées.<h2>Le Projet</h2>Pour souligner le 375e anniversaire de la ville de Montréal, deux créatrices célébreront le caractère unique de la Côte-des-Neiges en chapeautant le projet Rivières un projet théâtral présenté dans les lieux porteurs d’histoire du quartier.<br><br>Rivières est une série de performances documentaires.<br><br>C’est une tribune, où des citoyens se racontent et se rencontrent. C’est le dévoilement d’une communauté qui se révèle à elle-même. C’est une performance à la croisée des genres, où surgiront les voix de ces voisins inconnus, dans le contexte d’une balade dans le quartier.<br> <br> Rivières fera naviguer ses spectateurs dans les lieux historiques de Côte-des-Neiges, devenu un musée de récits, une galerie de consciences. Réalisé par Sofia Blondin et Veronica Mockler, produit par le Centre communautaire de loisirs de la Côte-des-Neiges, ce spectacle aura lieu à la fin de l’été 2017.<br><br>Il sera offert gratuitement au citoyens.<br><br>Plus de détails viendront. Suivez-nous!</p>");
+    $(".info").html(" <p><h1>Histoire</h1>Côte-des-Neiges.<br><br>Jadis, un little french village de tanneurs et d’agriculteurs, exploitant le courant d’un étroit ruisseau.<br><br> Aujourd’hui, un quartier cosmopolite, où cohabitent étudiants, nouveaux arrivants, et familles. Un territoire dense où circulent des centaines de travailleurs des domaines de la santé et de l’éducation.Une plaque tournante qui abrite toutes les religions du monde, et où 110 langues se font écho. <br><BR>Avec le temps, Côte-des-Neiges est devenu une large rivière, dont le débit a fait affluer des milliers de vies, et où autant d’histoires de migrations se sont versées.<h1>Le Projet</h1>Pour souligner le 375e anniversaire de la ville de Montréal, deux créatrices célébreront le caractère unique de la Côte-des-Neiges en chapeautant le projet Rivières un projet théâtral présenté dans les lieux porteurs d’histoire du quartier.<br><br>Rivières est une série de performances documentaires.<br><br>C’est une tribune, où des citoyens se racontent et se rencontrent. C’est le dévoilement d’une communauté qui se révèle à elle-même. C’est une performance à la croisée des genres, où surgiront les voix de ces voisins inconnus, dans le contexte d’une balade dans le quartier.<br> <br> Rivières fera naviguer ses spectateurs dans les lieux historiques de Côte-des-Neiges, devenu un musée de récits, une galerie de consciences. Réalisé par Sofia Blondin et Veronica Mockler, produit par le Centre communautaire de loisirs de la Côte-des-Neiges, ce spectacle aura lieu à la fin de l’été 2017.<br><br>Il sera offert gratuitement au citoyens.<br><br>Plus de détails viendront. Suivez-nous!</p>");
         
      $(".info").css("display", "-ms-flexbox").hide().fadeIn(500);
                $(".info").css("display", "flex").hide().fadeIn(500);
