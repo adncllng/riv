@@ -2,50 +2,59 @@
     body {
         color: white;
         overflow-y: scroll !important;
-        
         margin: 0px;
     }
     .wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
-    .vidCon{
+    .vidCon {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         height: 100vh;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         z-index: -1;
-        position:fixed;
-
+        position: fixed;
     }
     .video {
         width: 100vw;
+        max-height: 45vh;
         z-index: -1;
         background: url("video/poster.jpg") no-repeat;
         background-size: cover;
         opacity: 0;
     }
     .thing {
-        
-        height: 95vh;
+        height: 70vh;
     }
     .riv {
         margin-left: 7vw;
         font-size: 14vw;
         text-align: left;
         opacity: 0;
-        margin-top: 40vh;
+        margin-top: 11vh;
     }
     .about {
         text-align: center;
         font-size: 3vw;
-        opacity: .65;
+        opacity: 0;
         font-family: 'Inconsolata', monospace;
-        padding-bottom: 16vh;
+        padding-bottom: 16h;
     }
     .arrow {
-      
         font-size: 3vw !important;
+        opacity: .4;
     }
     .buttCon {
         position: fixed;
@@ -57,8 +66,10 @@
         font-size: 3vw;
     }
     .infoCon {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        text-align:center;
+        text-align: center;
         opacity: 0;
         margin: 2vw;
         height: 100vh;
@@ -77,12 +88,16 @@
         font-size: 3.2vw
     }
     .social {
-        order: 100;
+        -webkit-box-ordinal-group: 101;
+            -ms-flex-order: 100;
+                order: 100;
         padding-top: 10vh;
         font-size: 4vh;
     }
     .soFl {
-        justify-content: flex-end;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
         letter-spacing: 3vw;
     }
 }
@@ -169,12 +184,14 @@
         -ms-flex-direction: row;
         flex-direction: row;
         -ms-flex-pack: distribute;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+                justify-content: space-between;
         border: none;
     }
     .info {
         text-align: justify;
         font-size: 2vh;
+        display: -webkit-box;
         display: flex;
         display: -ms-flexbox;
         -webkit-box-orient: vertical;
@@ -286,7 +303,8 @@ button:active {
     -ms-flex-direction: row;
     flex-direction: row;
     -ms-flex-pack: distribute;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
     border: none;
 }
 

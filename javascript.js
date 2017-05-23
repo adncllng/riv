@@ -1,11 +1,15 @@
 $(document).ready(function(){
 if($(window).width()<769){
+            $(".video").delay(100).animate({opacity:1},900);
+    $(".fadeIn").delay(1000).animate({opacity:1},1000);
+    $(".about").delay(1500).animate({opacity:1},1500)
+    
+    
     $(window).scroll(function(){
-        $(".video").css("opacity",2.5 - $(window).scrollTop() / $(".video").height());
-        $(".infoCon").css("opacity",0 + $(window).scrollTop() / $(".infoCon").height());
+        $(".video").css("opacity",1 - $(window).scrollTop() / $(".video").height());
+        $(".infoCon").css("opacity",0 + $(window).scrollTop() / ($(".infoCon").height()/5));
     });
-        $(".video").delay(100).animate({opacity:1},900);
-    $(".riv").delay(1000).animate({opacity:1},1000);
+
     
     
    // $(".infoCon").delay(1000).animate({opacity:.75},900);
