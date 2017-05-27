@@ -113,25 +113,14 @@
                 justify-content: flex-end;
         letter-spacing: 3vw;
     }
-     }
-    button {
-        outline: none;
-        color: aliceblue;
-        background-color: transparent;
-        font-size: 6vw;
-        cursor:hand;
-        cursor: pointer;
-        border:none;
+    .rot{
+            -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+        width: 84vw;
+        text-align: center;
+        font-size: 7vw
+        
     }
-    button:active {
-        -webkit-transform: translateX(5px);
-        transform: translateX(5px);
-
-    }
-button:focus{
-    margin-right: 50vw;
-   
-}
 
 }
 
