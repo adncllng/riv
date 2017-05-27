@@ -4,6 +4,9 @@
         overflow-y: scroll !important;
         margin: 0px;
     }
+    h1{
+        font-size: 2vh;
+    }
     .wrap {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -34,16 +37,19 @@
         background: url("video/poster.jpg") no-repeat;
         background-size: cover;
         opacity: 0;
+        
     }
     .thing {
-        height: 70vh;
+        height: 82vh;
     }
+
     .riv {
         margin-left: 7vw;
-        font-size: 14vw;
+        font-size: 9vw;
         text-align: left;
         opacity: 0;
         margin-top: 11vh;
+        
     }
     .about {
         text-align: center;
@@ -60,6 +66,7 @@
         position: fixed;
         top: 0px;
         width: 98%;
+        display: none;
     }
     .butts {
         display: none;
@@ -69,22 +76,28 @@
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        text-align: center;
+        text-align: justify;
         opacity: 0;
         margin: 2vw;
         height: 100vh;
+        
     }
-    .h {
+
+    .h { display: inline-block;
         opacity: 1;
+        
         font-size: 6vw;
         color: aliceblue;
         text-shadow: 2px 0px 4px rgba(999, 999, 999, 0.4), -2px 0px 4px rgba(999, 999, 999, 0.4);
-        margin: 2vw;
+        margin-bottom: 5vw;
+        margin-right:4vw;
+        margin-left:4vw;
+
     }
+
     .p {
         opacity: 0;
         display: none;
-        text-align: right;
         font-size: 3.2vw
     }
     .social {
@@ -100,11 +113,32 @@
                 justify-content: flex-end;
         letter-spacing: 3vw;
     }
+     }
+    button {
+        outline: none;
+        color: aliceblue;
+        background-color: transparent;
+        font-size: 6vw;
+        cursor:hand;
+        cursor: pointer;
+        border:none;
+    }
+    button:active {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+
+    }
+button:focus{
+    margin-right: 50vw;
+   
+}
+
 }
 
 @media screen and (min-width:901px) {
     body {
         position: fixed;
+        
     }
     h1 {
         font-size: 4vh;
@@ -151,29 +185,35 @@
         opacity: 0;
         font-family: 'Inconsolata', monospace;
         text-align: left;
-        font-size: 10vw;
+        font-size: 8vw;
         color: rgba(999, 999, 999, .3);
         letter-spacing: 0vw;
     }
     .buttCon {
         display: -ms-grid;
         display: grid;
-        -ms-grid-row: 4;
-        -ms-grid-row-span: 1;
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 2;
         -ms-grid-column: 11;
         -ms-grid-column-span: 9;
-        grid-column: 11/20;
-        grid-row: 4/5;
+        grid-column-start: 11;
+        grid-column-end: 20;
+            
+        grid-row: 2/4;
         color: white;
     }
     button {
         background-color: transparent;
         font-size: 1.2vw;
+        cursor:hand;
+        cursor: pointer;
     }
     button:active {
         -webkit-transform: translateX(5px);
         transform: translateX(5px);
     }
+
+    
     .butts {
         color: aliceblue;
         display: -webkit-box;
@@ -185,54 +225,45 @@
         flex-direction: row;
         -ms-flex-pack: distribute;
         -webkit-box-pack: justify;
-                justify-content: space-between;
+                justify-content: space-between;        
         border: none;
     }
     .info {
-        text-align: justify;
         font-size: 2vh;
-        display: -webkit-box;
-        display: flex;
-        display: -ms-flexbox;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-        -webkit-box-align: left;
-        -ms-flex-align: left;
-        overflow-x: hidden;
-        align-items: left;
-        overflow-y: scroll;
+            -ms-flex-direction: column;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    flex-direction: column;
         color: whitesmoke;
         z-index: 1;
-        padding-right: 8vh;
-        padding-left: 0.5vh;
-        text-align: left;
-        vertical-align: middle;
+        padding-right: 1vh;
+        padding-left: 1vh;
+        text-align: justify;
+        max-width: 45vw;
+        
+        
+        
     }
     .infoCon {
         display: grid;
         display: -ms-grid;
-        -ms-grid-row: 6;
+        -ms-grid-row: 3;
         -ms-grid-row-span: 14;
         -ms-grid-column: 11;
         -ms-grid-column-span: 9;
         grid-column: 11/20;
-        grid-row: 6/20;
+        grid-row: 4/20;
     }
     .social {
         display: grid;
         display: -ms-grid;
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 2;
+        -ms-grid-row: 20;
+        -ms-grid-row-span: 1;
         -ms-grid-column: 19;
-        -ms-grid-column-span: 21;
-        grid-area: 1/19/2/21;
-        font-size: 4vh;
-        padding: 1vh;
+        -ms-grid-column-span: 22;
+        grid-area: 20/19/21/21;
+        font-size: 3vh;
+        padding-right: 1vh;
     }
     .fa:hover {
         color: rgba(999, 999, 999, .3);
@@ -243,8 +274,16 @@
         display: flex;
         -ms-flex-pack: distribute;
         justify-content: space-around;
-        text-shadow: 2px 0px 4px rgba(999, 999, 999, 0.4), -2px 0px 4px rgba(999, 999, 999, 0.4);
+        text-shadow: 1px 0px 2px rgba(999, 999, 999, 0.4), -1px 0px 2px rgba(999, 999, 999, 0.4);
     }
+    .arrow{
+        display:none !important;
+    }
+    
+    h1 {
+    font-size: 4vh;
+    margin-bottom: .6vw;
+}
 }
 
 body {
@@ -254,21 +293,22 @@ body {
     //font-family: 'Arvo', serif;
     / font-family: 'Fira Sans', sans-serif;
     overflow: hidden;
+    
 }
 
-h1 {
-    font-size: 4vh;
-}
+
 
 .thing {
     overflow: visible;
-    text-shadow: .3vw 0vw .3vw rgba(999, 999, 999, 0.4), -.3vw 0vw .3vw rgba(999, 999, 999, 0.4);
+
+     text-shadow: .2vw 0vw .2vw rgba(999, 999, 999, 0.4), -.2vw 0vw .2vw rgba(999, 999, 999, 0.4);
+    
 }
 
 .riv {
-    font-family: 'Inconsolata', monospace;
-    color: rgba(999, 999, 999, .3);
-    letter-spacing: 0vw;
+    font-family: 'Source Code Pro', monospace;
+    color: rgba(999, 999, 999, .1);
+    
 }
 
 .buttCon {
@@ -284,7 +324,7 @@ button:focus {
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
     -ms-text-shadow: 4px 0px 4px white, -4px 0px 4px white;
-    text-shadow: 4px 0px 4px rgba(999, 999, 999, 0.4), -4px 0px 4px rgba(999, 999, 999, 0.4);
+       text-shadow: .4vw 0vw .4vw rgba(999, 999, 999, 0.8), -.4vw 0vw .4vw rgba(999, 999, 999, 0.8);
 }
 
 button:active {
