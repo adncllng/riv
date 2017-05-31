@@ -22,6 +22,13 @@ $(document).ready(function () {
            } 
         
         
+    
+    
+        $(".fade1").delay(10).animate({opacity:1},700);
+
+    $(".fade2").delay(500).animate({opacity:1},700);
+    
+    
         $('.butt').on('click', function () {
 
             $('#participateContent').css({

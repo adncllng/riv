@@ -35,6 +35,7 @@ position: fixed;
         font-size: 15vw;
         margin: 0;
         text-align: center;
+        opacity: 0;
     }
     .right{
         display: -webkit-box;
@@ -80,8 +81,11 @@ position: fixed;
     }
     .arrow{
         color: white;
+        opacity: 0;
     }
-    
+    .lang{
+        font-size: 3vw !important;
+    }
     
 }
 @media screen and (min-width:901px) { /* DESKTP TABL*/
@@ -269,6 +273,7 @@ letter-spacing: .1vw;
 }
 .vive{
     height: 4.3vh !important;
+    opacity: 0;
     
 
 }
