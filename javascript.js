@@ -26,6 +26,11 @@ if($(window).width()<769){
           $('.2').removeClass('rot');
           $('.3').removeClass('rot');
           $('.4').removeClass('rot');
+        
+          $('.11').css({opacity:0});
+        $('.22').css({opacity:0});
+        $('.33').css({opacity:0});
+        $('.44').css({opacity:0});
     });
     
     $(".1").on('click',function(){

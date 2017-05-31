@@ -1,0 +1,64 @@
+$(document).ready(function () { 
+
+    if ($(window).width() < 900) { /*PHONE*/
+          $("#participateContent").insertAfter('#participateButton');
+              $("#contactContent").insertAfter('#contactButton');
+              $("#projectContent").insertAfter('#projectButton');
+              $("#artistsContent").insertAfter('#artistsButton');
+        $(".social").insertAfter('.infoCon');
+        
+            $(window).scroll(function(){
+        $(".video").css("opacity",1 - $(window).scrollTop() / $(".video").height());
+        $(".buttCon").css("opacity",0 + $(window).scrollTop() / $(".buttCon").height());
+                  $(".arrow").css("opacity",1 - $(window).scrollTop() / $(".buttCon").height());
+    });
+
+
+    } else {} /* DESKTO*/
+
+        
+        
+        $('.butt').on('click', function () {
+
+            $('#participateContent').css({
+                opacity: 0,
+                display:'none'
+            });
+            $('#contactContent').css({
+                opacity: 0,
+                display:'none'
+            });
+            $('#projectContent').css({
+                opacity: 0,
+                display:'none'
+            });
+            $('#artistsContent').css({
+                opacity: 0,
+                display:'none'
+            });
+        });
+        
+        $('#participateButton').on('click', function () {
+      $("#participateContent").toggle().animate({opacity:1,
+                                    },1000);
+            
+        });
+        
+             $('#projectButton').on('click', function () {
+      $("#projectContent").toggle().animate({opacity:1,
+                                    },1000);
+            
+        });
+                     $('#artistsButton').on('click', function () {
+      $("#artistsContent").toggle().animate({opacity:.85,
+                                    },1000);
+            
+        });
+                     $('#contactButton').on('click', function () {
+      $("#contactContent").toggle().animate({opacity:.85,
+                                    },1000);
+            
+        });
+    
+
+});

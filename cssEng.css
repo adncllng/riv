@@ -1,0 +1,229 @@
+@media screen and (max-width:900px) { /* PHONE */
+    .vidCon{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 100vh;
+        -ms-flex-line-pack: center;
+position: fixed;
+        z-index: -100;
+        
+    }
+     h2{
+        font-size: 4vw;
+         margin: 0;
+         text-align: center;
+    }
+
+    video {
+        -ms-flex-item-align: center;
+            align-self: center;
+        width: 100vw;
+        max-height: 46vh;
+        background: url("video/frame.jpg") no-repeat;
+        background-size: cover;
+        opacity: 1;
+        z-index: -100;
+        position: fixed;
+
+
+    }
+    .riv{
+        height: 85vh;
+        padding-top: 8vh;
+        padding-left: 4vw;
+        font-size: 15vw;
+        margin: 0;
+        text-align: center;
+    }
+    .right{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+        .buttCon{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            text-align: justify;
+            margin: 3vw;
+            opacity: 0;
+            font-size: 3vw;
+          
+    }
+    button{
+        font-size: 10vw;
+        margin: 3vh
+     
+    }
+
+    .social{
+        height: 10vh;
+        text-align: center;
+
+        
+    }
+    .arrow{
+        color: white;
+    }
+    
+    
+}
+@media screen and (min-width:901px) { /* DESKTP TABL*/
+    video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; 
+}
+   
+    body{
+    overflow-y: hidden;
+    }
+    .social {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        height: 5vh;
+        
+    }
+    .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .left {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 8;
+        height: 97vh;
+    }
+    .right {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 7;
+        margin-right: 5vw;
+        margin-bottom: 2vh;
+    }
+    button{
+       font-size: 1.4vw;
+        
+    }
+    .buttCon{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    .infoCon {
+        -webkit-box-flex: 6;
+        -ms-flex: 6;
+        flex: 6;
+        color: white;
+        margin-left: .4vw;
+        font-size: 1vw;
+    
+    }
+    .riv{
+    font-size: 8vw;
+    text-align: center;
+        margin-top: 11vh;
+    }
+}
+
+
+/* ALLLLLLALALALALALALALALALALALALALALALALALALALALLALALALAL */
+
+
+body {
+    background: black;
+    margin: 0;
+    font-family: 'Source Code Pro', monospace;
+}
+
+button {
+    color: white;
+    opacity: .95;
+        font-family: 'Source Code Pro', monospace;
+    background-color: transparent;
+    border:none;
+    cursor:hand;
+    cursor: pointer;
+}
+button:hover{
+        -ms-text-shadow: 4px 0px 4px white, -4px 0px 4px white;
+       text-shadow: .4vw 0vw .4vw rgba(999, 999, 999, 0.8), -.4vw 0vw .4vw rgba(999, 999, 999, 0.8);
+}
+
+button:focus {
+    outline: none;
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+    -ms-text-shadow: 4px 0px 4px white, -4px 0px 4px white;
+       text-shadow: .4vw 0vw .4vw rgba(999, 999, 999, .8), -.4vw 0vw .4vw rgba(999, 999, 999, .8);
+}
+
+button:active {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+    
+}
+    .content {
+        color: white;
+                display: none;
+        opacity: 0;
+            -ms-text-shadow: 4px 0px 4px white, -4px 0px 4px white;
+       text-shadow: 1vw 0vw 1vw rgba(000, 000, 000, 1), -1vw 0vw 1vw rgba(000, 000, 000, 1);
+    }
+
+.riv {
+    z-index: 1;
+    font-family: 'Source Code Pro', monospace;
+
+    
+    color: rgba(999, 999, 999, .5);
+    text-shadow:.2vw 0vw .2vw rgba(999, 999, 999, 0.4), -.2vw 0vw .2vw rgba(999, 999, 999, 0.4);
+  
+}
+.social{
+    color: white;
+    text-shadow: 1px 0px 2px rgba(999, 999, 999, 0.4), -1px 0px 2px rgba(999, 999, 999, 0.4);
+}
+a{
+    color: white;
+}
