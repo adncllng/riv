@@ -212,7 +212,7 @@ body {
     margin: 0;
     font-family: 'Source Code Pro', monospace;
 }
-
+video { display: block; }
 button {
     color: white;
     opacity: .95;
