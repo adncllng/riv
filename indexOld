@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Rivieres</title>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Fira+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+
+
+    <div class="wrap">
+        <div class="vidCon">
+            <video class="video" autoplay playsinline muted loop poster="video/poster.jpg">
+       <source src="video/test1.mp4" type="video/mp4">
+    
+    </video>
+        </div>
+        <div class="buttCon">
+
+            <div class="butts">
+                <button class="butts participez">participez </button>
+                <button class="butts joindre">nous joindre </button>
+                <button class="butts projet"> le projet </button>
+                <button class="butts artistes">les artistes</button>
+
+
+            </div>
+        </div>
+
+        <div class="thing">
+
+            <h1 class="riv fadeIn"> Rivi<span class="e">è</span>res </h1>
+
+        </div>
+        <div class="about">
+            <h2> <i class="arrow fa fa-arrow-down" aria-hidden="true"></i></h2>
+        </div>
+
+        <div class="social">
+            <div class="soFl">
+                <a href="eng.html"><span>EN</span></a>
+                <a href="https://www.facebook.com/rivieres375mtl"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/rivieres375mtl"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="mailto:rivieres375mtl@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+        <div class="infoCon">
+            <div class="info ">
+
+            </div>
+
+        </div>
+        <div class="im">
+            <img src="City_of_Montr%C3%A9al_logo.svg%20(1).png">
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+
+
+
+    <script src="javascript.js"></script>
+
+</body>
+
+</html>
