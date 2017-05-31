@@ -75,6 +75,7 @@ position: fixed;
 
     .social{
         height: 10vh;
+        font-size: 5vw;
         text-align: center;
 
         
@@ -84,7 +85,7 @@ position: fixed;
         opacity: 0;
     }
     .lang{
-        font-size: 3vw !important;
+        font-size: 5vw !important;
     }
     
 }
@@ -252,8 +253,8 @@ button:active {
     font-family: 'Source Code Pro', monospace;
 
     
-    color: rgba(999, 999, 999, .5);
-    text-shadow:.2vw 0vw .2vw rgba(999, 999, 999, 0.4), -.2vw 0vw .2vw rgba(999, 999, 999, 0.4);
+    color: rgba(999, 999, 999, .2);
+    text-shadow:.1vw 0vw .4vw rgba(999, 999, 999, .6), -.1vw 0vw .4vw rgba(999, 999, 999, 0.6);
   
 }
 .social{
