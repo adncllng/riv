@@ -15,7 +15,7 @@ $(document).ready(function () {
         
             $(window).scroll(function(){
         $(".video").css("opacity",1 - $(window).scrollTop() / $(".video").height());
-        $(".buttCon").css("opacity",0 + $(window).scrollTop() / ($(".video").height()*2));
+        $(".buttCon").css("opacity",0 + $(window).scrollTop() / ($(".riv").height()));
                   $(".arrow").css("opacity",1 - $(window).scrollTop() / $(".buttCon").height());
     });
 
