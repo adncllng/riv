@@ -23,6 +23,7 @@ $(document).ready(function () {
     } else {/* DESKTO*/
 
         $(".fade1").delay(10).animate({opacity:1},700);
+                $(".buttCon").delay(500).animate({opacity:1},700);
 
     $(".fade2").delay(500).animate({opacity:1},700);
            } 

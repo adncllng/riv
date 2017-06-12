@@ -122,6 +122,7 @@
     #center{
            display: block;
     margin: 0 auto;
+        height: 6vh;
     }
     .social {
         -webkit-box-flex: 1;
